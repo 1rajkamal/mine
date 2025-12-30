@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Life In One Click</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="energy-cursor"></div>
+  <div class="cursor-trail"></div>
+  <section id="intro">
+    <h1>Everyone has a story.</h1>
+    <p>This one is mine.</p>
+    <button id="enterBtn">ENTER</button>
+  </section>
+  <section id="hero" class="hidden">
+    <h2>I’m Raj Kamal</h2>
+    <p class="typing">A learner building his future with code.</p>
+    <span class="scroll-hint">↓ Scroll</span>
+  </section>
+  <section id="story">
+    <div class="story-line">No roadmap.</div>
+    <div class="story-line">No guidance.</div>
+    <div class="story-line">Just curiosity.</div>
+  </section>
+  <section id="memories">
+    <h2 class="memory-title">Moments that shaped me</h2>
+    <div class="memory-grid">
+      <div class="memory-card">
+        <img src="rajimg1.png" alt="">
+        <p class="memory-text">First time I touched code.</p>
+      </div>
+      <div class="memory-card">
+        <img src="rajimg3.png" alt="">
+        <p class="memory-text">Learning alone. Growing daily.</p>
+      </div>
+      <div class="memory-card">
+        <img src="rajimg2.png" alt="">
+        <p class="memory-text">Still building. Still dreaming.</p>
+      </div>
+    </div>
+  </section>
+  <section id="choice">
+    <h2 class="choice-title">
+      When things got difficult, what would you do?
+    </h2>
+    <div class="choice-buttons">
+      <button data-choice="try">Try Again</button>
+      <button data-choice="giveup">Give Up</button>
+    </div>
+    <p id="choice-result"></p>
+  </section>
+  <section id="skills-burst">
+    <h2 class="skills-title">What I’ve Learned Till Now</h2>
+
+    <div class="burst-container">
+      <button id="burstBtn">UNLOCK SKILLS</button>
+    </div>
+    <div class="skills-area">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Figma</div>
+      <div class="skill">Canva</div>
+      <div class="skill">C++</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2 class="projects-title">Things I’ve Built</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="alpha.png" alt="Alpha Talk">
+        <div class="project-info">
+          <h3>Alpha Talk</h3>
+          <p>Custom reply chatbot based on message text.</p>
+          <a href="https://alpha-kamal.onrender.com/login" target="_blank">LIVE</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="sense.png" alt="MoodSense">
+        <div class="project-info">
+          <h3>MoodSense</h3>
+          <p>Text-based mood detection (Happy / Sad).</p>
+          <a href="https://moodsense-1.onrender.com" target="_blank">LIVE</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="fast.png" alt="Typing Game">
+        <div class="project-info">
+          <h3>How Fast You Are</h3>
+          <p>Typing reflex speed game.</p>
+          <a href="https://1rajkamal.github.io/how-fast-you-are/" target="_blank">LIVE</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="future.png" alt="Coaching Website">
+        <div class="project-info">
+          <h3>Coaching Website</h3>
+          <p>Responsive tuition enquiry website.</p>
+          <a href="https://1rajkamal.github.io/brightpath/" target="_blank">LIVE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="learning-now">
+    <h2 class="learning-title">What I’m Learning Right Now</h2>
+    <p class="learning-sub">Not finished topics. Ongoing focus.</p>
+    <div class="learning-grid">
+      <div class="learn-box">Advanced JavaScript Logic</div>
+      <div class="learn-box">Backend Workflows</div>
+      <div class="learn-box">Data Visualization</div>
+      <div class="learn-box">System Thinking</div>
+      <div class="learn-box">Clean Code Practices</div>
+      <div class="learn-box">Real-world Problem Solving</div>
+    </div>
+  </section>
+  <section id="problems">
+    <h2 class="problems-title">Problems I Want to Solve</h2>
+    <p class="problems-sub">
+      Areas where I want to create real impact with code.
+    </p>
+    <div class="problems-list">
+      <div class="problem-item">Making student tools simpler and smarter</div>
+      <div class="problem-item">Reducing manual work through automation</div>
+      <div class="problem-item">Turning raw data into useful insights</div>
+      <div class="problem-item">Building practical tools for self-learners</div>
+    </div>
+  </section>
+  <section id="certificates">
+    <h2 class="cert-title">Certificates</h2>
+    <p class="cert-sub">Verified learning & hands-on effort</p>
+    <div class="cert-unlock-box">
+      <button id="unlockCertBtn">UNLOCK CERTIFICATES</button>
+    </div>
+    <div class="cert-area">
+      <div class="cert-card" data-pdf="cc.pdf">
+        <img src="cer1.png" alt="">
+        <h3>CLA: Programming Essentials in C</h3>
+      </div>
+      <div class="cert-card" data-pdf="java.pdf">
+        <img src="java.png" alt="">
+        <h3>Oracle Java Certificate</h3>
+      </div>
+      <div class="cert-card" data-pdf="html.pdf">
+        <img src="html.png" alt="">
+        <h3>Certiport HTML & CSS</h3>
+      </div>
+      <div class="cert-card" data-pdf="redpy.pdf">
+        <img src="redpy.png" alt="">
+        <h3>RedHat Python</h3>
+      </div>
+      <div class="cert-card" data-pdf="EDA.pdf">
+        <img src="eda.png" alt="">
+        <h3>Udemy EDA</h3>
+      </div>
+      <div class="cert-card" data-pdf="cispy.pdf">
+        <img src="cispy.png" alt="">
+        <h3>Cisco Python</h3>
+      </div>
+    </div>
+  </section>
+<section id="hackathons">
+  <h2 class="hack-title">Hackathons & Innovation Challenges</h2>
+  <p class="hack-sub">
+    Participated in competitive innovation and problem-solving events
+  </p>
+  <div class="hack-grid">
+    <div class="hack-card">
+      <img src="mh.jpg" alt="MHTECHIN Innovation Challenge Certificate">
+      <h3>MHTECHIN Innovation Challenge 2024</h3>
+      <p class="hack-desc">
+        Participated in the MHTECHIN Innovation Challenge 2024 organised by MHTECHIN.
+      </p>
+      <span class="hack-tag">Participation</span>
+    </div>
+    <div class="hack-card">
+      <img src="war.jpg" alt="InnovWar Hackathon Certificate">
+      <h3>InnovWar Hackathon</h3>
+      <p class="hack-desc">
+        Participated in InnovWar Hackathon organised by GN Group of Institutes,
+        Greater Noida, Uttar Pradesh.
+      </p>
+      <span class="hack-tag">Participation</span>
+    </div>
+    <div class="hack-card">
+      <img src="ey.jpg" alt="EY Techathon Certificate">
+      <h3>EY Techathon 5.0</h3>
+      <p class="hack-desc">
+        Participated in Round 1: Executive Summary Submission of EY Techathon 5.0
+        organised by EY.
+      </p>
+      <span class="hack-tag">Round 1</span>
+    </div>
+  </div>
+</section>
+<section id="connect">
+  <h2 class="connect-title">Connect With Me</h2>
+  <p class="connect-sub">
+    Want to know where I exist on the internet?
+  </p>
+  <button id="revealSocials">REVEAL</button>
+  <div class="social-links hidden">
+    <a href="https://github.com/1rajkamal" target="_blank" class="social-item">
+      <span>GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/raj-kamal-490176291/" target="_blank" class="social-item">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://www.instagram.com/ra.j_kamal?igsh=bjh5ZmIyZmZsc3k2" target="_blank" class="social-item">
+      <span>Instagram</span>
+    </a>
+    <a href="mailto:rajkamal9741@gmail.com" class="social-item">
+      <span>Email</span>
+    </a>
+  </div>
+</section>
+<footer id="footer">
+  <p>
+    © All rights reserved | Developed with ❤️ by
+    <a href="https://github.com/1rajkamal" target="_blank">Raj Kamal</a>
+  </p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

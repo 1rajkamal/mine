@@ -14,10 +14,7 @@ window.addEventListener("scroll", () => {
       intro.style.display = "none";
       hero.classList.remove("hidden");
       hero.style.opacity = "1";
-<<<<<<< HEAD
-=======
       document.querySelector(".header").classList.add("show");
->>>>>>> e1bf243 (first Commit)
       window.scrollTo(0, 0);
     });
   }
@@ -169,12 +166,9 @@ if (revealBtn) {
       socials.classList.contains("show") ? "HIDE" : "REVEAL";
   });
 }
-<<<<<<< HEAD
-=======
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 
 toggle.addEventListener("click", ()=>{
   nav.classList.toggle("open");
 });
->>>>>>> e1bf243 (first Commit)

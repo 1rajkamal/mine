@@ -172,3 +172,40 @@ const nav = document.querySelector(".nav");
 toggle.addEventListener("click", ()=>{
   nav.classList.toggle("open");
 });
+const pill = document.querySelector(".nav-pill");
+const links = document.querySelectorAll(".nav a");
+const sections = document.querySelectorAll("section");
+
+function movePill(el){
+  const rect = el.getBoundingClientRect();
+  const parent = el.parentElement.getBoundingClientRect();
+
+  pill.style.left = (rect.left - parent.left) + "px";
+  pill.style.width = rect.width + "px";
+}
+
+/* hover */
+links.forEach(link=>{
+  link.addEventListener("mouseenter", ()=> movePill(link));
+});
+
+/* scroll active */
+window.addEventListener("scroll", ()=>{
+  let current="";
+
+  sections.forEach(sec=>{
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 140;
+    const height = sec.offsetHeight;
+
+    if(top >= offset && top < offset + height){
+      current = sec.id;
+    }
+  });
+
+  links.forEach(link=>{
+    if(link.getAttribute("href")==="#"+current){
+      movePill(link);
+    }
+  });
+});

@@ -796,7 +796,7 @@ section {
 
 .nav a:hover{
   opacity:1;
-  transform:translateY(-2px);
+  /* transform:translateY(-2px); */
 }
 .resume-btn{
   padding:8px 18px;
@@ -858,8 +858,8 @@ section {
 
   .nav{
     position:absolute;
-    top:70px;
-    left:50%;
+    top:180px;
+    left:27%;
     transform:translateX(-50%);
 
     flex-direction:column;
@@ -867,7 +867,7 @@ section {
 
     background:rgba(0,0,0,.7);
     backdrop-filter:blur(12px);
-    padding:20px;
+    padding:15px;
     border-radius:18px;
 
     opacity:0;
